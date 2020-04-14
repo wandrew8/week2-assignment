@@ -16,7 +16,6 @@ class Author extends React.Component {
         this.setState({ bookmarked: !this.state.bookmarked })
     }
 
-    
     render() {
         const { name, image, isMediumMember } = this.props.data.author;
         const { postedDate, minutesToRead } = this.props.data;
@@ -30,7 +29,7 @@ class Author extends React.Component {
                         <div className="date">{moment(new Date(postedDate)).format("MMM Do")}<span className="dot"></span> {minutesToRead} min read</div>
                     </div>
                     <div onClick={this.addBookmark}> 
-                        {this.state.bookmarked ? <i className="far fa-bookmark"></i> : <i className="fas fa-bookmark" ></i>}
+                        {this.state.bookmarked ? <i className="far fa-bookmark"></i> : <i className="fas fa-bookmark bookMarked" ></i>}
                     </div>
                 </div>
             </div>

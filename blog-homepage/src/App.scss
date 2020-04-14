@@ -16,6 +16,10 @@
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 300px;
+    transition: 200ms ease-in;
+    &:hover {
+      box-shadow: 2px 2px 5px lightgray;
+    }
     .image {
       height: 100%;
       width: 100%;
@@ -74,6 +78,10 @@
    .article {
     height: 350px;
     border: solid lightgray 1px;
+    transition: 200ms ease-in;
+    &:hover {
+      box-shadow: 2px 2px 5px lightgray;
+    }
   .content {
     margin: 1rem;
     display: flex;
@@ -150,4 +158,8 @@
 
 .member {
   border: solid lightgreen 2px;
+}
+
+.bookMarked {
+  color: lightgreen;
 }
