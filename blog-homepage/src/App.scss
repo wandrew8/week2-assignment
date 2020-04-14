@@ -1,0 +1,153 @@
+.app {
+  h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+.forYou {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 1.5rem;
+  .article {
+    height: 300px;
+    border: solid lightgray 1px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 300px;
+    .image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    p {
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: black;
+      margin: 0;
+    }
+    .sideContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 1rem;
+    }
+    .extra {
+      color: gray;
+      margin: 0rem;
+      position: relative;
+      p {
+        margin: 0;
+      }
+    }
+    .audio {
+      font-size: 0.9rem;
+      margin: 0.25rem;
+      .fa-volume-up {
+        margin-right: 1rem;
+      }
+    }
+    .fa-star {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.missed {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  h2 {
+    margin: 0;
+  }
+   .article {
+    height: 350px;
+    border: solid lightgray 1px;
+  .content {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 225px
+  }
+    .preview {
+      margin: 0.5rem 0rem;
+      color: gray;
+      font-size: 0.9rem;
+    }
+    .fa-star {
+      margin-right: 1rem;
+      color: gray;
+    }
+    .image {
+      height: 100px;
+      width: 100%;
+      object-fit: cover;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.author {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem;
+  border-top: solid 1px lightgray;
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+  }
+  img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    padding: 0.25rem;
+  }
+  .date {
+    color: gray;
+    font-size: 0.9rem;
+  }
+  .dot {
+    height: 2px;
+    width: 2px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-flex;
+    margin: 0.25rem 0.5rem 0.25rem 0.8rem;
+  }
+  i {
+    align-self: flex-end;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+}
+
+.member {
+  border: solid lightgreen 2px;
+}
